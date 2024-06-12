@@ -1,0 +1,88 @@
+:root{
+    --corFundo: #fa953c;
+    --corBotao:#365c8d;
+    --corTextoPrincipal:#16670d;
+    --corTextoSecundario:#85368e;
+    --corTextoAuxiliar:#67f24f;
+
+    --fontePrincipal: impact;
+    --fonteSecundaria: Comic Sans MS;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--corFundo);
+    width: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    
+}
+
+h1{
+    font-family: var(--fontePrincipal);
+    color: var(--corTextoPrincipal);
+    margin-top: 4.5rem;
+}
+
+span{
+    color: var(--corTextoSecundario);
+    font-family: var(--fonteSecundaria);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+input{
+    width: 18rem;
+    height: 3rem;
+    margin-top: 1rem;
+    border: none;
+    font-family: var(--fontePrincipal);
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button{
+    width: 10rem;
+    height: 4rem;
+    font-family: var(--fontePrincipal);
+    background-color: var(--corBotao);
+    margin: 2rem;
+    text-align: center;
+    color: var(--corTextoAuxiliar);
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input, button{
+    cursor: pointer;
+    transition: .15s;
+}
+
+.btn:hover {
+    opacity: .8;
+    transform: scale(0.9);
+}

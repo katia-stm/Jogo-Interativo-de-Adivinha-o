@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="jogo.css">
+        <title>Jogo interativo de adivinhação</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1>Adivinhe o número!</h1>
+                <span>Estou pensando em um número de 1 a 100, você só tem<span id="tentativas"></span>tentativa(s):</span>
+                <input type="number" id="digite-numero">
+                <button id="botao" onclick="adivinharNumero()">Adivinhar</button>
+                <span id="msg"></span>
+                <button class="btn" onclick="window.location.reload()">Jogar Novamente</button>
+            </div>
+        </main>
+
+        <script src="jogo.js"></script>
+       
+    </body>
+</html>
